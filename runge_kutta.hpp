@@ -52,8 +52,8 @@ inline std::array<T, N> _calculate_outputs(const std::array<T, N>& inputs,
     return rez;
 }
 
-template <typename InputIterator, size_t N, typename T = double>
-inline void _store_output_values(std::array<InputIterator, N>& out, const std::array<T, N>& vals)
+template <typename OutputIterator, size_t N, typename T = double>
+inline void _store_output_values(std::array<OutputIterator, N>& out, const std::array<T, N>& vals)
 {
     for (size_t i = 0; i < N; ++i)
     {
